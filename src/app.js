@@ -1,4 +1,4 @@
-import './css/App.css'
+import './css/app.css'
 import React from 'react';
 import Form from './components/Form'
 import tree from './img/tree.jpeg'
