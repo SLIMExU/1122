@@ -1,105 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>React App (Standalone)</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #333;
-      color: #fff;
-      font-family: sans-serif;
-      padding: 20px;
-    }
-
-    .input {
-      width: 300px;
-      padding: 20px;
-      margin-right: 10px;
-      background: #000;
-      color: #fff;
-      border: none;
-      outline: none;
-    }
-
-    h1 {
-      font-size: 30px;
-      margin: 20px 0;
-      color: rgb(213, 213, 213);
-    }
-
-    img {
-      margin-top: 20px;
-      max-width: 400px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background: #444;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>React App</title>
 </head>
 
 <body>
-  <div id="root"></div>
-
-  <!-- React і ReactDOM з CDN -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-  <!-- Babel для JSX -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- Основний React-код -->
-  <script type="text/babel">
-
-    const printInfo = (data) => {
-      console.log(data);
-    };
-
-    function Form(props) {
-      return (
-        <form>
-          <input className="input" placeholder={props.info} />
-          <button type="button" onClick={() => printInfo("Click")}>
-            Натисни
-          </button>
-        </form>
-      );
-    }
-
-    Form.defaultProps = {
-      info: 'Впишіть дані'
-    };
-
-    function App() {
-      return (
-        <div>
-          <h1>React App (Standalone)</h1>
-          <Form />
-          <Form info="Впишіть дані 2" />
-          <img src="https://picsum.photos/id/237/400/250" alt="Example" />
-        </div>
-      );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    );
-  </script>
+ <noscript>You need to enable JavaScript to run this app.</noscript>
+ <div id="root"></div>
 </body>
+
 </html>
